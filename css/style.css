@@ -1,1 +1,189 @@
 @charset "UTF-8";
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+body {
+    color: #707070;
+}
+
+
+/* ここからヘッダー */
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 32px;
+    padding-bottom: 34px;
+    padding-left: 20px;
+}
+
+.header-right {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-right li {
+  margin-right: 1rem;
+}
+
+
+@media screen and (max-width: 960px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-right {
+        display: none;
+    }
+}
+
+
+/* ヘッダー以降 */
+.top-image {
+    width: 100%;
+    height: 79.5vh;
+}
+
+.subtitle {
+    font-size: 34px;
+    font-weight: normal;
+    padding: 35px 20px;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.articles {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.article {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6.5px;
+    margin-bottom: 62px;
+}
+
+.article-img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.article p {
+    line-height: 30px;
+}
+
+.read-more {
+    text-align: right;
+}
+
+.read-more a {
+    text-decoration: none;
+    color: skyblue;
+}
+
+@media screen and (max-width: 600px) {
+    .articles {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+/* ここからコンタクトフォーム */
+.cotact-title{
+    font-size: 32px;
+    margin-left: 18.5px;
+    margin-bottom: 38px;
+}
+  
+form{
+display: flex;
+justify-content: center;
+flex-direction: column;
+margin: 0 auto;
+margin-bottom: 50px;
+width: 585px;
+}
+
+form :nth-child(3){
+height: 235px;
+}
+
+.contact-text{
+height: 42px;
+margin-bottom: 30px;
+}
+
+input, textarea {
+font-size: 20px;
+padding-left: 11px;
+}
+
+button{
+margin-top: 3px;
+margin-bottom: 40px;
+height: 45px;
+font-size: 20px;
+border: none;
+background-color: gray;
+color: rgb(254, 252, 252);
+border-radius: 10px;
+}
+
+
+/* ここからフッター */
+footer {
+    width: 100%;
+    background-color: black;
+    height: 58px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-left: 19px;
+    margin-top: auto;
+    font-size: 20px;
+}
+
+
+/* ここからsingle.php */
+.main-content{
+    min-height: 100vh;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 60px;
+}
+  
+.main-title{
+font-size: 30px;
+color: rgb(201, 191, 1);
+}
+
+.main-box{
+min-height: 400px;
+}
+
+@media screen and (max-width: 600px) {
+    .main-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
