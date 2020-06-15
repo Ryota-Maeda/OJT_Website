@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
 
+    <script src="<?php echo get_template_directory_uri(); ?>/js/app.js" defer></script>
+
     <?php wp_head(); ?>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <nav>
-        <?php wp_nav_menu( array(
-            'theme_location'=>'mainmenu', 
-            'container'     =>'', 
-            'menu_class'    =>'',
-            'items_wrap'    =>'<ul id="main-nav">%3$s</ul>'));
-        ?>
-      </nav>
-    </header>
+  <header>
+    <nav>
+      <?php wp_nav_menu( array(
+          'theme_location'=>'mainmenu', 
+          'container'     =>'', 
+          'menu_class'    =>'',
+          'items_wrap'    =>'<ul id="main-nav">%3$s</ul>'));
+      ?>
+    </nav>
+  </header>

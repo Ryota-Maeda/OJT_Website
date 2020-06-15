@@ -1,8 +1,7 @@
 <footer>
-      <small>@ 2019 ALL RIGHT RESERVED</small>
+  <p>@ 2019 ALL RIGHT RESERVED</p>
 </footer>
 
-</div>
 <?php wp_footer(); ?>
 </body>
 </html>
