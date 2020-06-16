@@ -1,8 +1,16 @@
 @charset "UTF-8";
 
-#main-nav {
+/* ここからヘッダー */
+header {
+  height: 120px;
+  background-color: pink;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+}
+
+#main-nav {
+  display: flex;
 }
 
 #main-nav li a {
@@ -11,6 +19,70 @@
   color: #707070;
 }
 
+/* ここからメイン */
+.top-left {
+  width: 22%;
+  position: relative; top: -100px; left: 0;
+  z-index: 1;
+}
+
+.top-image {
+  width: 90%;
+  position: absolute;
+  top: 58.5%;
+	left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.bottom-right {
+  position: relative; top: 30px; left: 720px;
+  z-index: 1;
+}
+
+/* ここからセクション */
+.subtitle {
+  height: 50px;
+  text-align: center;
+}
+
+.articles {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.article {
+  margin-bottom: 20px;
+
+}
+
+.article-img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.article-date {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.article-title {
+  font-size: 10px;
+  margin-bottom: 40px;
+}
+
+.read-more {
+  text-align: right;
+}
+
+.read-more a {
+  color: #707070;
+  text-decoration: none;
+}
 
 /* ここからフッター */
 footer {
