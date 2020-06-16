@@ -1,5 +1,5 @@
 <footer>
-  <p>@ 2019 ALL RIGHT RESERVED</p>
+  <p>Copyright &copy; Shinohara. ALL RIGHTS RESERVED.</p>
 </footer>
 
 <?php wp_footer(); ?>
