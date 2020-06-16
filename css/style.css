@@ -1,9 +1,13 @@
 @charset "UTF-8";
 
+.container {
+  width: 1152px;
+  margin: 0 auto;
+}
+
 /* ここからヘッダー */
 header {
-  height: 120px;
-  background-color: pink;
+  height: 128px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -20,42 +24,51 @@ header {
 }
 
 /* ここからメイン */
+.main-box {
+  position: relative;
+}
+
 .top-left {
   width: 22%;
-  position: relative; top: -100px; left: 0;
+  position: absolute;
+  top: -120px;
+  left: 0;
   z-index: 1;
 }
 
-.top-image {
-  width: 90%;
-  position: absolute;
-  top: 58.5%;
-	left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 0;
+.main-image {
+  display: flex;
+  justify-content: center;
 }
 
 .bottom-right {
-  position: relative; top: 30px; left: 720px;
+  position: absolute;
+  bottom: -10px;
+  right: 5px;
   z-index: 1;
+}
+
+.main-text {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  letter-spacing: 3px;
 }
 
 /* ここからセクション */
 .subtitle {
+  margin-top: 80px;
   height: 50px;
   text-align: center;
 }
 
 .articles {
-  width: 800px;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .article {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 
 }
 
