@@ -80,7 +80,7 @@ section {
 }
 
 .article {
-  margin-bottom: 1.2rem;
+  margin-bottom: 3.9rem;
   transition: all .4s ease-in-out;
   display: flex;
   flex-direction: column;
@@ -89,7 +89,7 @@ section {
 
 .article-text {
   width: 18rem;
-  height: 15rem;
+  height: 12.3rem;
   position: relative;
 }
 
