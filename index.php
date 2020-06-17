@@ -37,10 +37,11 @@
                 <img class="article-img" src="<?php echo get_template_directory_uri(); ?>/img/dog.jpg" alt="">
               <?php endif; ?>
             </a>
-
-            <p class="article-date"><?php the_time("Y/m/d/"); ?></p>
-            <p class="article-title"><?php the_title(); ?></p>
-            <p class="read-more"><a href="<?php the_permalink(); ?>">Read More</a></p>
+            <div class="article-text">
+              <p class="article-date"><?php the_time("Y/m/d/"); ?></p>
+              <p class="article-title"><?php the_title(); ?></p>
+              <p class="read-more"><a href="<?php the_permalink(); ?>">READ MORE</a></p>
+            </div>
           </li>
         <?php endwhile; ?>
 

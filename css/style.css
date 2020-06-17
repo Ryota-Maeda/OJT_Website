@@ -15,10 +15,12 @@ header {
 
 #main-nav {
   display: flex;
+  margin-right: 1.15rem;
 }
 
 #main-nav li a {
-  margin-right: 2.5rem;
+  margin-left: 1.76rem;
+  font-size: .77rem;
   text-decoration: none;
   color: #707070;
 }
@@ -29,9 +31,9 @@ header {
 }
 
 .top-left {
-  width: 22%;
+  width: 20.9%;
   position: absolute;
-  top: -120px;
+  top: -117px;
   left: 0;
   z-index: 1;
 }
@@ -43,66 +45,127 @@ header {
 
 .bottom-right {
   position: absolute;
-  bottom: -10px;
-  right: 5px;
+  bottom: -9px;
+  right: 3px;
   z-index: 1;
 }
 
 .main-text {
-  margin-top: 20px;
-  font-size: 1.3rem;
-  letter-spacing: 3px;
+  margin-top: 1.3rem;
+  font-size: 1.35rem;
+  letter-spacing: .156rem;
 }
 
 /* ここからセクション */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .subtitle {
-  margin-top: 80px;
-  height: 50px;
-  text-align: center;
+  font-size: 1.48rem;
+  margin-top: 5.6rem;
+  margin-bottom: 1.62rem;
+  height: 3.1rem;
 }
 
 .articles {
+  width: 66rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
+  margin-bottom: 4rem;
+  min-height: 100vh;
 }
 
 .article {
-  /* margin-bottom: 20px; */
+  margin-bottom: 1.2rem;
+  transition: all .4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.article-text {
+  width: 18rem;
+  height: 15rem;
+  position: relative;
+}
+
+.article:hover {
+  box-shadow: 1px 1px 12px rgba(0,0,0,.65);
 }
 
 .article-img {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 20px;
+  width: 320px;
+  height: 206px;
 }
 
 .article-date {
-  font-size: 12px;
-  margin: 5px 0;
+  font-size: .9rem;
+  margin: 1rem 0;
 }
 
 .article-title {
-  font-size: 10px;
-  margin-bottom: 40px;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  flex-wrap: wrap;
 }
 
 .read-more {
-  text-align: right;
+  font-size: .72rem;
+  display: flex;
+  justify-content: flex-end;
+  letter-spacing: -0.02rem;
+  position: absolute;
+  top: 9.65rem;
+  left: 13.63rem;
 }
 
 .read-more a {
   color: #707070;
+  display: block;
+  padding: 0 0 1rem;
+  position: relative;
   text-decoration: none;
+}
+
+.read-more a::after {
+  border-bottom: solid 2px #707070;
+  bottom: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  width: 0;
+}
+
+.read-more a:hover::after {
+  width: 100%;
 }
 
 /* ここからフッター */
 footer {
-  height: 80px;
+  height: 8rem;
   color: white;
   background-color: black;
+  font-size: 1rem;
+  letter-spacing: -.02rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: auto;
+}
+
+footer span {
+  letter-spacing: -.07rem;
+}
+
+footer p {
+  /* padding-left: -1rem; */
+  padding-bottom: .2rem;
+
 }
