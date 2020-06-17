@@ -9,7 +9,8 @@
 
     <?php if (get_header_image()): ?>
       <div class="main-image">
-        <img src="<?php header_image(); ?>" alt="main" class="top-image">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/visual_1_pc.png" alt="main" class="top-image">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/visual_1_sp.png" alt="main" class="top-image-sp">
       </div>
     <?php else: ?>
       <img src="<?php echo get_template_directory_uri(); ?>/img/visual_1_pc.png" alt="main" class="top-image">
@@ -22,6 +23,7 @@
 
     <!-- 文言 -->
     <p class="main-text">進化し続ける「街」アメリカンビレッジマガジン</p>
+    <p class="main-text-sp">進化し続ける「街」<br>アメリカンビレッジマガジン</p>
   </main>
 
   <section>

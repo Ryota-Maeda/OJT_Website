@@ -13,7 +13,8 @@
 </head>
 <body>
 <div class="container">
-  <header>
+  <header class="header-sp">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="" class="left-sp">
     <nav>
       <?php wp_nav_menu( array(
           'theme_location'=>'mainmenu', 
