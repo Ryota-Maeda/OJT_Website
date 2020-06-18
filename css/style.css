@@ -1,4 +1,7 @@
 @charset "UTF-8";
+body {
+  background-color: pink;
+}
 
 .container {
   width: 1152px;
@@ -12,12 +15,10 @@ header {
   justify-content: flex-end;
   align-items: center;
 }
-
 #main-nav {
   display: flex;
   margin-right: 1.15rem;
 }
-
 #main-nav li a {
   margin-left: 1.76rem;
   font-size: .77rem;
@@ -60,31 +61,25 @@ header {
   visibility: hidden;
   transition: opacity .5s, visibility .5s;
 }
-
 .nav ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .nav li {
   margin: 1.8rem auto;
   font-weight: bold;
 }
-
 .nav li a {
   color: gray;
   text-decoration: none;
   margin: 1rem auto;
   margin-left: 0rem;
 }
-
 .nav.show {
   opacity: 1;
   visibility: visible;
 }
-
-
 .nav_toggle i {
   display: block;
   width: 100%;
@@ -104,8 +99,6 @@ header {
 .nav_toggle i:nth-child(3) {
   bottom: 0;
 }
-
-
 .nav_toggle.show i:nth-child(1) {
   transform: translateY(10px) rotate(-45deg);
 }
@@ -116,47 +109,10 @@ header {
   transform: translateY(-12px) rotate(45deg);
 }
 
-
-@media screen and (min-width: 768px) {
-  .nav {
-    display: none;
-  }
-
-  
-}
-
-@media screen and (max-width: 767px) {
-  .nav_toggle {
-    display: block;
-    position: relative;
-    top: -15rem;
-    width: 1.75rem;
-    height: 1.5rem;
-    display: flex;
-  }
-
-  .nav_toggle {
-    opacity: 3;
-    visibility: visible;
-    transition: opacity .5s, visibility .5s;
-  }
-
-  #main-nav li a {
-    margin-left: 0rem;
-    font-size: 1.8rem;
-    color: black;
-
-  }
-  
-  
-}
-
-
 /* ここからメイン */
 .main-box {
   position: relative;
 }
-
 .top-left {
   width: 20.9%;
   position: absolute;
@@ -164,7 +120,6 @@ header {
   left: 0;
   z-index: 1;
 }
-
 .fade-pc {
   width: 1024px;
   height: 448px;
@@ -179,19 +134,16 @@ header {
 .fade-sp img {
   position: absolute;
 }
-
 .main-image {
   display: flex;
   justify-content: center;
 }
-
 .bottom-right {
   position: absolute;
   bottom: -9px;
   right: 3px;
   z-index: 1;
 }
-
 .main-text {
   margin-top: 1.3rem;
   font-size: 1.35rem;
@@ -204,14 +156,12 @@ section {
   flex-direction: column;
   align-items: center;
 }
-
 .subtitle {
   font-size: 1.48rem;
   margin-top: 5.6rem;
   margin-bottom: 1.62rem;
   height: 3.1rem;
 }
-
 .articles {
   width: 66rem;
   display: flex;
@@ -220,7 +170,6 @@ section {
   margin-bottom: 4rem;
   min-height: 100vh;
 }
-
 .article {
   margin-bottom: 3.9rem;
   transition: all .4s ease-in-out;
@@ -228,33 +177,27 @@ section {
   flex-direction: column;
   align-items: center;
 }
-
 .article-text {
   width: 18rem;
   height: 12.3rem;
   position: relative;
 }
-
 .article:hover {
   box-shadow: 1px 1px 12px rgba(0,0,0,.65);
 }
-
 .article-img {
   width: 320px;
   height: 206px;
 }
-
 .article-date {
   font-size: .9rem;
   margin: 1rem 0;
 }
-
 .article-title {
   font-size: 1rem;
   line-height: 1.2rem;
   flex-wrap: wrap;
 }
-
 .read-more {
   font-size: .72rem;
   display: flex;
@@ -264,7 +207,6 @@ section {
   top: 9.65rem;
   left: 13.63rem;
 }
-
 .read-more a {
   color: #707070;
   display: block;
@@ -272,7 +214,6 @@ section {
   position: relative;
   text-decoration: none;
 }
-
 .read-more a::after {
   border-bottom: solid 2px #707070;
   bottom: 0;
@@ -284,7 +225,6 @@ section {
   -webkit-transition: all .3s ease;
   width: 0;
 }
-
 .read-more a:hover::after {
   width: 100%;
 }
@@ -301,17 +241,17 @@ footer {
   align-items: center;
   margin-top: auto;
 }
-
 footer span {
   letter-spacing: -.07rem;
 }
-
 footer p {
-  /* padding-left: -1rem; */
   padding-bottom: .2rem;
-
 }
+
 @media screen and (min-width: 768px) {
+  .nav {
+    display: none;
+  }
   .left-sp {
     display: none;
   }
@@ -337,6 +277,24 @@ footer p {
   }
   .header-sp nav {
     display: none;
+  }
+  .nav_toggle {
+    display: block;
+    position: relative;
+    top: -15rem;
+    width: 1.75rem;
+    height: 1.5rem;
+    display: flex;
+  }
+  .nav_toggle {
+    opacity: 3;
+    visibility: visible;
+    transition: opacity .5s, visibility .5s;
+  }
+  #main-nav li a {
+    margin-left: 0rem;
+    font-size: 1.8rem;
+    color: black;
   }
   .top-left {
     display: none;
@@ -387,24 +345,19 @@ footer p {
     width: 100%;
     height: auto;
   }
-
   .article-text {
     width: 90%;
     height: 20rem;
     position: relative;
   }
-
   .article-date {
     font-size: 1.3rem;
     margin: 1rem 0;
   }
-  
   .article-title {
     font-size: 1.3rem;
     line-height: 1.2rem;
-    /* flex-wrap: wrap; */
   }
-  
   .read-more {
     font-size: 1.3rem;
     letter-spacing: -0.02rem;
