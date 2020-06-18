@@ -9,3 +9,4 @@ add_theme_support( 'custom-header' );
 add_theme_support('title-tag');
 
 register_nav_menu('mainmenu', 'メインメニュー');
+

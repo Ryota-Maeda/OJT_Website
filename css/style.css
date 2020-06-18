@@ -25,6 +25,111 @@ header {
   color: #707070;
 }
 
+/* ここからハンバーガーメニュー */
+.nav_toggle {
+  display: block;
+  position: relative;
+  top: 2rem;
+  left: 90%;
+  width: 1.75rem;
+  height: 1.5rem;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s, visibility .5s;
+}
+.nav {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 15rem;
+  background-color: pink;
+  z-index: 2;
+}
+.nav {
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s, visibility .5s;
+}
+
+.nav li a {
+  color: gray;
+  text-decoration: none;
+}
+
+.nav.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.nav_toggle i {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  transition: transform .5s, opacity .5s;
+}
+.nav_toggle i:nth-child(1) {
+  top: 0;
+}
+.nav_toggle i:nth-child(2) {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.nav_toggle i:nth-child(3) {
+  bottom: 0;
+}
+
+
+.nav_toggle.show i:nth-child(1) {
+  transform: translateY(10px) rotate(-45deg);
+}
+.nav_toggle.show i:nth-child(2) {
+  opacity: 0;
+}
+.nav_toggle.show i:nth-child(3) {
+  transform: translateY(-12px) rotate(45deg);
+}
+
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav_toggle {
+    display: block;
+    position: relative;
+    top: -15rem;
+    width: 1.75rem;
+    height: 1.5rem;
+    display: flex;
+  }
+
+  .nav_toggle {
+    opacity: 3;
+    visibility: visible;
+    transition: opacity .5s, visibility .5s;
+  }
+
+  
+}
+
+
 /* ここからメイン */
 .main-box {
   position: relative;
@@ -36,6 +141,21 @@ header {
   top: -117px;
   left: 0;
   z-index: 1;
+}
+
+.fade-pc {
+  width: 1024px;
+  height: 448px;
+}
+.fade-pc img {
+  position: absolute;
+}
+.fade-sp {
+  width: 750px;
+  height: 554px;
+}
+.fade-sp img {
+  position: absolute;
 }
 
 .main-image {
@@ -80,7 +200,7 @@ section {
 }
 
 .article {
-  margin-bottom: 1.2rem;
+  margin-bottom: 3.9rem;
   transition: all .4s ease-in-out;
   display: flex;
   flex-direction: column;

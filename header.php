@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/app.js" defer></script>
+
 
     <?php wp_head(); ?>
 </head>
@@ -24,3 +26,28 @@
       ?>
     </nav>
   </header>
+
+  <!-- ハンバーガーメニュー -->
+  <span class="nav_toggle">
+    <i></i>
+    <i></i>
+    <i></i>
+  </span>
+
+  <!-- <nav class="nav">
+    <ul class="nav_menu_ul">
+        <li class="nav_menu_li"><a href="#">Menu01</a></li>
+        <li class="nav_menu_li"><a href="#">Menu02</a></li>
+        <li class="nav_menu_li"><a href="#">Menu03</a></li>
+        <li class="nav_menu_li"><a href="#">Menu04</a></li>
+    </ul>
+  </nav> -->
+
+  <nav class="nav">
+    <?php wp_nav_menu( array(
+            'theme_location'=>'mainmenu', 
+            'container'     =>'', 
+            'menu_class'    =>'',
+            'items_wrap'    =>'<ul id="main-nav">%3$s</ul>'));
+    ?>
+  </nav>

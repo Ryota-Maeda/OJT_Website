@@ -8,12 +8,28 @@
     </div>
 
     <?php if (get_header_image()): ?>
-      <div class="main-image">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/visual_1_pc.png" alt="main" class="top-image">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/visual_1_sp.png" alt="main" class="top-image-sp">
+      <div class="main-image top-image">
+      <div class="fade-pc">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/visual_1_pc.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/visual_2_pc.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/visual_3_pc.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/visual_4_pc.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/visual_5_pc.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/visual_6_pc.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/visual_7_pc.png" alt="">
       </div>
-    <?php else: ?>
-      <img src="<?php echo get_template_directory_uri(); ?>/img/visual_1_pc.png" alt="main" class="top-image">
+    </div>
+    <div class="main-image top-image-sp">
+      <div class="fade-sp">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/visual_1_sp.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/visual_2_sp.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/visual_3_sp.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/visual_4_sp.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/visual_5_sp.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/visual_6_sp.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/visual_7_sp.png" alt="">
+      </div>
+    </div>
     <?php endif;?>
 
     <div class="bottom-right">
