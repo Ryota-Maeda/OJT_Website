@@ -34,15 +34,6 @@
     <i></i>
   </span>
 
-  <!-- <nav class="nav">
-    <ul class="nav_menu_ul">
-        <li class="nav_menu_li"><a href="#">Menu01</a></li>
-        <li class="nav_menu_li"><a href="#">Menu02</a></li>
-        <li class="nav_menu_li"><a href="#">Menu03</a></li>
-        <li class="nav_menu_li"><a href="#">Menu04</a></li>
-    </ul>
-  </nav> -->
-
   <nav class="nav">
     <?php wp_nav_menu( array(
             'theme_location'=>'mainmenu', 
